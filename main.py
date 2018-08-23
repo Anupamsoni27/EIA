@@ -459,9 +459,9 @@ m.category = '""" + dataset_name + """' and p.name=m.default_attribute;"""
         temp_df.to_csv(path+ 'output/Property_check.csv', index=False)
 
 dbObj = ICIS_Validator("Connect MS SQL")
-dataset_name = input("Enter dataset category name....")
-eia_data_file_name = input("Enter EIA data file name....")
-server = input("Enter server name....")
+dataset_name = input("Enter dataset category name...")
+eia_data_file_name = input("Enter EIA data file name...")
+server = input("Enter server name...")
 if server == "DHUB1":
     server_name = "10.0.9.97"
     user_name = "gdm"
